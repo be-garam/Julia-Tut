@@ -24,7 +24,9 @@ Personal Tutorial for learning Julia
 julia-tutorial/
 ├── README.md
 ├── Project.toml
-└── src/
+├── Project.toml
+├   └── hello.jl ...
+└── basic/
     └── hello.jl ...
 ```
 - `Project.toml`: Julia 패키지 환경 설정 파일(패키지 의존성 관리)
@@ -40,3 +42,18 @@ julia-tutorial/
 ## 실행
 - `REPL`: Julia 실행 환경
     - terminal에서 `julia` 입력하면 접근 가능
+    -  `]`: Pkg 모드
+    - `?`: 도움말 모드
+    - `;`: 쉘 명령어 모드
+- 초기 실행시 컴파일이 일어나므로 첫실행은 느리지만, 이후 사용 및 실행에서는 빠름
+
+## Notes
+- 시작이 "1"부터네..?
+- python에서 벡터 연산에 사용되는 numpy.array, 등을 굳이 가져와서 쓴 것처럼 가져올 필요 없이 기본 배열 자료형 자체가 고성능 벡터/행렬 연산을 지원
+
+## Question
+REPL란?
+Conda와 같이 env 관리가 어떻게 되는거지? 구체적으로는 폴더 구조마다 가지고 있는 toml파일을 가지고 만드는 건가? 아니면 env 파일 만들어지는 것처럼 따로 만들어지는 건가? 그러면 사용하던 환경을 다시 사용하려면..? 너무 비효율 적이지 않나?
+Recap: 16bit 연산자인가? 비트, 바이트 개념?
+브로트캐스팅이란?
+컴파일 캐시 개념..? 전반적인 실행 과정을 python과 비교해서 이해
